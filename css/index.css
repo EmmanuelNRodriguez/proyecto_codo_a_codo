@@ -1,0 +1,90 @@
+/*Mariela Perez Santangelo */
+.main_index {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.parrafos {
+    color: white;
+    font-size: 1rem;
+    text-align: initial;
+}
+
+#audio_y_foto {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 20px;
+}
+
+#audio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.audio_separacion {
+    margin: 5px;
+}
+
+#foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+#foto img {
+    width: 18vw;
+    border: 10px #ffffff double;
+}
+
+#foto img:hover {
+    transform: scale(1.2, 1.2);
+    transition: transform 2s;
+
+}
+
+/*Medida para tablet*/
+@media screen and (max-width: 700px) {
+
+    #titulo_sec {
+        text-align: center;
+    }
+
+    .parrafos {
+        text-align: center;
+    }
+
+    #video {
+        width: 100vw;
+    }
+
+    #audio {
+        align-items: center;
+    }
+
+    #audio_y_foto {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    #foto img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .main_index {
+        display: flex;
+        flex-direction: column
+    }
+
+    .audio_separacion {
+        width: 90%;
+    }
+}
