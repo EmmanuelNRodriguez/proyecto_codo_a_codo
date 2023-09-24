@@ -1,9 +1,10 @@
 
-#Biografia{
+#biografia{
   display: flex;
   flex-direction: column;
   margin: 10px; 
-  color: white;
+  color: rgb(230, 224, 224);
+  text-align: center;
 }
 
 section{
@@ -11,6 +12,8 @@ section{
     width: 100%;
     height: 430px;
   }
+
+
   section img{
     width: 0px;
     flex-grow: 1;
@@ -24,3 +27,8 @@ section{
     opacity: 1;
     filter: contrast(120%);
   }
+  ul{
+    list-style: none; 
+   
+  }
+ 

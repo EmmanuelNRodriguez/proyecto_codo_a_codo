@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/banda.png">
     <title>La banda del 10</title>
-   <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/index.css">
-
 </head>
 
 <body>
-   <div class="contenedor"> 
+    <div class="contenedor">
         <header>
             <h1 id="titulo">La banda del 10</h1>
             <nav>
@@ -25,36 +27,41 @@
                 </ul>
             </nav>
         </header>
- 
-        <main class="main_index">
-            <h2 id="titulo_sec">Bienvenidos a nuestra pagina oficial</h2>
-            <p class="parrafos">Este es un video de nuestras presentaciones...</p>
-            <iframe id="video" width="716" height="403" src="https://www.youtube.com/embed/kko8H70UXIE"
-            title="Intro para concierto Situacion Límite" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
-            <div id="audio_y_foto">
-                <div id="audio">
-                    <p class="parrafos">Proximamente en spotify</p>
-                    <audio class="audio_separacion" src="audio\Morrissey - Everyday Is Like Sunday (128 kbps).mp3" preload="auto" controls></audio>
-                    <audio class="audio_separacion" src="audio\Morrissey - Everyday Is Like Sunday (128 kbps).mp3" preload="auto" controls></audio>
-                    <audio class="audio_separacion" src="audio\Morrissey - Everyday Is Like Sunday (128 kbps).mp3" preload="auto" controls></audio>
-                    <audio class="audio_separacion" src="audio\Morrissey - Everyday Is Like Sunday (128 kbps).mp3" preload="auto" controls></audio>
+
+        <main id="main_index">
+            <div class="item">
+                <h2 id="titulo_sec">Bienvenidos a nuestra página oficial</h2>
+                <p class="p_index">Prepárate para disfrutar!!</p>
+                <video id="video" src="video/Intro para concierto Situacion Límite.mp4#t=2" preload="auto" muted
+                    controls></video>
+            </div>
+
+            <div id="items_juntos">
+                <div class="item">
+                    <p class="p_index">Próximamente en spotify</p>
+                    <audio class="audio" src="audio/Attaque 77 - Setentista (128 kbps).mp3" preload="auto"
+                        controls></audio>
+                    <audio class="audio" src="audio/Violencia (128 kbps).mp3" preload="auto" controls></audio>
+                    <audio class="audio" src="audio/Attaque 77 - Ska del exodo (128 kbps).mp3" preload="auto"
+                        controls></audio>
+                    <audio class="audio" src="audio\Morrissey - Everyday Is Like Sunday (128 kbps).mp3" preload="auto"
+                        controls></audio>
                 </div>
 
-                <div id="foto">
-                    <p class="parrafos">Nuestro proximo show</p>
-                    <img src="img/jauria.jpg" alt="afiche promocional">
+                <div class="item">
+                    <p class="p_index">Nuestro próximo show</p>
+                    <img id="img-promocional" src="img/jauria.jpg" alt="afiche promocional">
                 </div>
             </div>
         </main>
+
         <footer>
             <div id="redes">
-                <a href="http://facebook.com.ar"><img class="img_red" src="img/facebook.png" alt="face"></a>
-                <a href="http://https://www.instagram.com/"><img class="img_red" src="img/instagram.png"
-                        alt="insta"></a>
-                <a href="https://www.linkedin.com/"><img class="img_red" src="img/linkedin.png" alt="linkedin"></a>
-                <a href="https://web.whatsapp.com/"><img class="img_red" src="img/whatsapp.png" alt="whats"></a>
+                <a href="http://facebook.com.ar" target="_blank"><img class="img_red" src="img/facebook.png" alt=" logo facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="img_red" src="img/instagram.png"
+                        alt=" logo instagram"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img class="img_red" src="img/linkedin.png" alt="logo linkedin"></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><img class="img_red" src="img/whatsapp.png" alt="logo whatsapp"></a>
             </div>
             <small>La banda del 10 - 2023</small>
         </footer>
