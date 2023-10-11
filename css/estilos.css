@@ -38,7 +38,7 @@ header {
 
 #titulo {
      
-    transform: translatey(50px);
+    transform: translatey(0px);
     animation: float 6s ease-in-out infinite
 }
 
