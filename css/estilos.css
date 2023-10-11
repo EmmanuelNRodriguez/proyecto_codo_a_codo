@@ -38,20 +38,20 @@ header {
 
 #titulo {
      
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite
+    transform: translatey(50px);
+    animation: float 3s ease-in-out infinite
 }
 
 @keyframes float{
     0% {
-    transform: translatey(0px);
+    transform: translatey(50px);
 }
 
 50% {
-    transform: translatey(-20px);
+    transform: translatey(10px);
 }
 100% {
-    transform: translatey(0px);
+    transform: translatey(50px);
 }
 }
 
@@ -113,6 +113,10 @@ footer {
 /*Responsive*/
 
 @media screen and (max-width: 700px) {
+
+    #img_titulo{
+        max-width: 75%;
+    }
 
     #cabecera{    
         flex-direction: column;    
