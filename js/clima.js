@@ -14,5 +14,5 @@ fetch(API_URL)
         ResponseHumi.innerHTML = "Humedad: " + response.main.humidity + "%"
         ResponseSens.innerHTML = "Sensación termica: " + response.main.feels_like + "°C"
         ResponsePres.innerHTML = "Presion atmosferica: " + response.main.pressure + "hPa"
-        ResponseImag.innerHTML = '<img src="http://openweathermap.org/img/wn/' + response.weather[0].icon + '@2x.png"></img>'
+        ResponseImag.innerHTML = '<img src="https://openweathermap.org/img/wn/' + response.weather[0].icon + '@2x.png"></img>'
         })
