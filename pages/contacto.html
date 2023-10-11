@@ -37,14 +37,51 @@
                     <li class="seleccionado"><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-
         </header>
 
-        <main>
-            <section>
-                <div id="articulos">
+        <main id="main_contacto">
+            <div class="contenedor_contacto">
+                <h2>Si queres contactarte con nosotros y enviarnos información relevante, elegí el área de interés y
+                    escribínos.</h2>
+                <div class="formulario_contacto">
+                    <form action="#">
+                        <div class="fila">
+                            <div class="columna_izquierda">
+                                <label for="nombre" class="label_formulario">Nombre<span>*</span></label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre o apodo" required>
+                            </div>
+                            <div class="columna_derecha">
+                                <label for="email" class="label_formulario">Email<span>*</span></label>
+                                <input type="email" id="email" name="email" placeholder="correo@mail.com" required>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="columna_izquierda">
+                                <label for="area" class="label_formulario">Área<span>*</span></label>
+                                <select id="area" name="area">
+                                    <option value>Elegí el área de interés</option>
+                                    <option value="integrantes">Integrantes</option>
+                                    <option value="contrataciones">Contrataciones</option>
+                                    <option value="management">Management</option>
+                                    <option value="prensa">Prensa</option>
+                                </select>
+                            </div>
+                            <div class="columna_derecha">
+                                <label for="asunto" class="label_formulario">Asunto<span>*</span></label>
+                                <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <label for="mensaje" class="label_formulario">Mensaje<span>*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="10" cols="2" wrap="soft"
+                                placeholder="Tu mensaje" required></textarea>
+                        </div>
+                        <div class="fila">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
-            </section>
+            </div>
         </main>
 
         <footer>
