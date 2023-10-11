@@ -25,14 +25,15 @@ header {
             rgb(0, 0, 0));
     gap: 10px;
     box-sizing: border-box;
-    align-items: center;
     color: rgb(248, 246, 246);
 }
 
-#cabecera {
+#cabecera{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 37%;
 }
 
 #titulo {
@@ -98,6 +99,11 @@ footer {
 /*Responsive*/
 
 @media screen and (max-width: 700px) {
+
+    #cabecera{    
+        flex-direction: column;    
+        margin-right: 0%;
+    }
 
     #titulo {
         text-align: center;

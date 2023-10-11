@@ -10,7 +10,6 @@ const ResponseImag = document.querySelector("#imag");
 fetch(API_URL)
     .then(res => res.json())
     .then(response => {
-        console.log(response)
         ResponseTemp.innerHTML = "Temperatura: " + response.main.temp + "°C"
         ResponseHumi.innerHTML = "Humedad: " + response.main.humidity + "%"
         ResponseSens.innerHTML = "Sensación termica: " + response.main.feels_like + "°C"
