@@ -10,9 +10,9 @@ const ResponseImag = document.querySelector("#imag");
 fetch(API_URL)
     .then(res => res.json())
     .then(response => {
-        ResponseTemp.innerHTML = "Temperatura: " + response.main.temp + "°C"
-        ResponseHumi.innerHTML = "Humedad: " + response.main.humidity + "%"
-        ResponseSens.innerHTML = "Sensación termica: " + response.main.feels_like + "°C"
-        ResponsePres.innerHTML = "Presion atmosferica: " + response.main.pressure + "hPa"
-        ResponseImag.innerHTML = '<img src="https://openweathermap.org/img/wn/' + response.weather[0].icon + '@2x.png"></img>'
+        ResponseTemp.innerHTML = `Temperatura: {response.main.temp} °C`
+        ResponseHumi.innerHTML = `Humedad: {response.main.humidity} %`
+        ResponseSens.innerHTML = `Sensación termica: {response.main.feels_like} °C`
+        ResponsePres.innerHTML = `Presion atmosferica: {response.main.pressure} hPa`
+        ResponseImag.innerHTML = `<img src="https://openweathermap.org/img/wn/{response.weather[0].icon}@2x.png"></img>`
         })
