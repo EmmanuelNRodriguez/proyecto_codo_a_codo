@@ -1,8 +1,10 @@
 #productos {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     align-self: stretch;
+    max-width: 90%;
     gap: 15px;
     color: black;
     align-items: center;
@@ -12,14 +14,19 @@
 
 .producto {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    max-width: 25%;
     border: 1px solid rgb(116, 116, 116);
     padding: 0px;
     box-sizing: border-box;
     border-radius: 20px;
     background-color: rgba(179, 179, 174, 0.5);
+}
+
+.producto p{
+    text-align: center;
+    max-width: 80%;
 }
 
 .producto:hover {
@@ -31,10 +38,9 @@
 }
 
 .img_pro {
-    width: 50%;
-    max-height: 100px;
-    max-width: 100px;
-    height: 50%;
+    /* width: 50%; */
+    height: 100px;
+    width: 100px;
     padding: 10px;
 }
 
@@ -42,11 +48,6 @@
 
 
 @media screen and (max-width: 700px) {
-
-
-    #productos {
-        flex-direction: column;
-    }
 
     .producto {
         max-width: 50%
