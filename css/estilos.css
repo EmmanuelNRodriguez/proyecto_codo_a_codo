@@ -39,7 +39,7 @@ header {
 #titulo {
      
     transform: translatey(50px);
-    animation: float 3s ease-in-out infinite
+    animation: float 6s ease-in-out infinite
 }
 
 @keyframes float{
@@ -114,8 +114,12 @@ footer {
 
 @media screen and (max-width: 700px) {
 
+    #cabecera_titulo{
+        margin:10% 0;
+    }
+
     #img_titulo{
-        max-width: 75%;
+        width: 100%;
     }
 
     #cabecera{    
