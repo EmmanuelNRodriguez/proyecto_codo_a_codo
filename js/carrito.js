@@ -31,3 +31,12 @@ for (let i = 1; i <= 6; i++) {
     const botonAgregar = document.getElementById(`addp${i}`);
     botonAgregar.addEventListener('click', () => sumarProducto(i));
 }
+
+function vaciarCarr(){
+    for (let i = 1; i <= 6; i++) {
+        const productoCarrito = `prod${i}`;
+        document.getElementById(`addp${i}`).textContent = "Agregar";
+        carrito[productoCarrito] = 0;
+    }
+    document.querySelector("#cantCarr").textContent = 0;
+}
