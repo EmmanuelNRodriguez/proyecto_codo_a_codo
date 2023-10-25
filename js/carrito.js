@@ -69,7 +69,7 @@ const verCarr = () => {
         Number(carrito[productoCarrito]) > 0 && (textCarr += `${textoProd[textoCarrito]} --- cant: ${carrito[productoCarrito]}\n`);
     }
     
-    textCarr = textCarr>0? `${textCarr}\n\nTotal de productos: ${document.querySelector("#cantCarr").textContent}\n` : "\nCarrito de compras vacío\n";
+    textCarr = Number(document.querySelector("#cantCarr").textContent)>0? `${textCarr}\n\nTotal de productos: ${document.querySelector("#cantCarr").textContent}\n` : "\nCarrito de compras vacío\n";
     
     swal("Detalle de tu carrito:", `${textCarr}`);
 };
