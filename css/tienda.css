@@ -12,10 +12,8 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    border: 3px solid;
-    border-color: rgb(230, 117, 52);
     background-color: rgba(179, 179, 174, 0.75);
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0), -5px -5px 12px black inset;
     border-radius: 50%;
     padding: 10px;
     width: 130px;
@@ -102,7 +100,7 @@
 }
 
 .producto:hover {
-    box-shadow: 5px 5px 10px black, -5px -5px 12px black inset;
+    box-shadow: 5px 5px 10px lightslategray, -5px -5px 12px black inset;
 }
 
 .tit_prod {
