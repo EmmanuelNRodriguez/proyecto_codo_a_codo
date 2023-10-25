@@ -40,6 +40,11 @@ header {
     width: 100%;
 }
 
+#img_cli{
+    width: 60px;
+    height: 60px;
+}
+
 #clima{
     width: 100%;
     align-items: left;
