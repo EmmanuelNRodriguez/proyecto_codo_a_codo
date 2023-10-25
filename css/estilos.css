@@ -4,12 +4,14 @@ body {
     margin: 0;
     font-family: 'Oxygen', sans-serif, Verdana;
     background-color: rgb(0, 0, 0);
+    width: 100%;
 }
 
 .contenedor {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #titulo_sec {
@@ -25,25 +27,27 @@ header {
             rgb(0, 0, 0));
     gap: 10px;
     justify-content: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     color: rgb(248, 246, 246);
+    width: 100%;
 }
 
 #cabecera{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin: 10px;
 }
 
 #clima{
-    width: 30%;
+    width: 100%;
+    align-items: left;
+    padding-left: 10px;
 }
 
 #titulo {
-    width: 70%;
+    width: 100%;
     transform: translatey(50px);
     animation: float 6s ease-in-out infinite
 }
@@ -114,10 +118,9 @@ footer {
     padding: 10px;
 }
 
-
 /*Responsive*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 
     #img_titulo{
         width: 90%;
@@ -126,15 +129,16 @@ footer {
     #cabecera{    
         flex-direction: column;
         justify-content: center;
+        gap: 10px;
     }
 
     #clima{
-        width: 50%;
+        width: 100%;
     }
 
     #titulo {
         width: 100%;
-        text-align: center;
+        align-items: center;
     }
 
     nav ul {

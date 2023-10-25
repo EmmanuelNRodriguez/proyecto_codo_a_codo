@@ -17,12 +17,20 @@
     <div class="contenedor">
         <header>
             <div id="cabecera">
+                <div id="arriba">
                 <div id="clima">
                     <div id="imag"></div>
                     <div id="temp"></div>
                     <div id="humi"></div>
                     <div id="sens"></div>
                     <div id="pres"></div>
+                </div>
+                <div id="contCarro">
+                    <div id="carro">
+                    <img src="../img/Carrito.png" id="carr" alt="carrito">
+                    <p id="cantCarr">0</p>
+                </div>
+                </div>
                 </div>
                 <div>
                     <h1 id="titulo"><img id="img_titulo" src="../img/titulo1.png" alt=""></h1>
@@ -46,36 +54,96 @@
                     <img class="img_pro" src="../img/remera_blanca.png" alt="Producto">
                     <p>Remera con estampado de la banda.</p>
                     <p>Precio: <strong>$ 2.500</strong></p>
+                    <div class="xCarrito">
+                    <select name="p1" id="p1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <button id="addp1" type="button" onclick=sumarp1()>Agregar</button>
+                    </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Buzo Capucha</strong></p>
                     <img class="img_pro" src="../img/sueter_negro.png" alt="Producto">
                     <p>Buzo con capucha y estampado de la banda.</p>
                     <p>Precio: <strong>$ 7.500</strong></p>
+                    <div class="xCarrito">
+                        <select name="p2" id="p2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button id="addp2" type="button" onclick=sumarp2()>Agregar</button>
+                    </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Chomba Roja</strong></p>
                     <img class="img_pro" src="../img/chomba_roja.png" alt="Producto">
                     <p>Chomba roja con estampado de la banda.</p>
                     <p>Precio: <strong>$ 6.400</strong></p>
+                    <div class="xCarrito">
+                        <select name="p3" id="p3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button id="addp3" type="button" onclick=sumarp3()>Agregar</button>
+                    </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Taza</strong></p>
                     <img class="img_pro" src="../img/taza.png" alt="Producto">
                     <p>Taza con el logo.</p>
                     <p>Precio: <strong>$ 1.000</strong></p>
+                    <div class="xCarrito">
+                        <select name="p4" id="p4">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button id="addp4" type="button" onclick=sumarp4()>Agregar</button>
+                    </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Lapicera</strong></p>
                     <img class="img_pro" src="../img/lapicera.png" alt="Producto">
                     <p>Lapicera con logo personalizada.</p>
                     <p>Precio: <strong>$ 500</strong></p>
+                    <div class="xCarrito">
+                        <select name="p5" id="p5">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button id="addp5" type="button" onclick=sumarp5()>Agregar</button>
+                    </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Vinilo</strong></p>
                     <img class="img_pro" src="../img/vinilo.png" alt="Producto">
                     <p class="desc_prod">Vinilo decorativo con logo.</p>
                     <p>Precio: <strong>$ 2.400</strong></p>
+                    <div class="xCarrito">
+                        <select name="p6" id="p6">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button id="addp6" type="button" onclick=sumarp6()>Agregar</button>
+                    </div>
                 </div>
             </div>
         </main>
@@ -94,7 +162,7 @@
         </footer>
     </div>
     <script src="../js/clima.js" type="module"></script>
-    <script src="carrito.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
