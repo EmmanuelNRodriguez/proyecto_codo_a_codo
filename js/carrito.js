@@ -71,5 +71,5 @@ const verCarr = () => {
     
     textCarr = Number(document.querySelector("#cantCarr").textContent)>0? `${textCarr}\n\nTotal de productos: ${document.querySelector("#cantCarr").textContent}\n` : "\nCarrito de compras vacío\n";
     
-    swal("Detalle de tu carrito:", `${textCarr}`);
+    swal("Detalle de tu carrito", `${textCarr}`);
 };
