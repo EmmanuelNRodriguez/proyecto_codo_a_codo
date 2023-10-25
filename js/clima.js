@@ -12,7 +12,7 @@ fetch(API_URL)
     .then(response => {
         ResponseTemp.innerHTML = `Temperatura: ${response.main.temp}°C`
         ResponseHumi.innerHTML = `Humedad: ${response.main.humidity}%`
-        ResponseSens.innerHTML = `Sensación termica: ${response.main.feels_like}°C`
-        ResponsePres.innerHTML = `Presion atmosferica: ${response.main.pressure}hPa`
+        ResponseSens.innerHTML = `Sensación: ${response.main.feels_like}°C`
+        ResponsePres.innerHTML = `Presion: ${response.main.pressure}hPa`
         ResponseImag.innerHTML = `<img id="img_cli" src="https://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png"></img>`
         })

@@ -40,21 +40,42 @@ header {
     width: 90%;
 }
 
+#arriba{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    width: 90%;
+}
+
+#arrIzq{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 50%;
+}
+
 #img_cli{
     width: 60px;
     height: 60px;
 }
 
 #clima{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: left;
-    padding-left: 10px;
+}
+
+#clima>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px
 }
 
 #titulo { 
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 90%;
     transform: translatey(50px);
     animation: float 6s ease-in-out infinite
 }
@@ -141,7 +162,12 @@ footer {
         width: 100%;
     }
 
+    #clima>div{
+    width: 100%;
+    }
+
     #titulo {
+        height: 100px;
         width: 100%;
         align-items: center;
         justify-content: center;
