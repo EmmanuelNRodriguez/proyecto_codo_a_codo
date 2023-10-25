@@ -44,15 +44,15 @@
                 <h2>Si queres contactarte con nosotros y enviarnos información relevante, elegí el área de interés y
                     escribínos.</h2>
                 <div class="formulario_contacto">
-                    <form action="#">
+                    <form onsubmit="return validarForm()">
                         <div class="fila">
                             <div class="columna_izquierda">
                                 <label for="nombre" class="label_formulario">Nombre<span>*</span></label>
-                                <input type="text" id="nombre" name="nombre" placeholder="Nombre o apodo" required>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre o apodo">
                             </div>
                             <div class="columna_derecha">
                                 <label for="email" class="label_formulario">Email<span>*</span></label>
-                                <input type="email" id="email" name="email" placeholder="correo@mail.com" required>
+                                <input type="email" id="email" name="email" placeholder="correo@mail.com" >
                             </div>
                         </div>
                         <div class="fila">
@@ -68,16 +68,16 @@
                             </div>
                             <div class="columna_derecha">
                                 <label for="asunto" class="label_formulario">Asunto<span>*</span></label>
-                                <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+                                <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje">
                             </div>
                         </div>
                         <div class="fila">
                             <label for="mensaje" class="label_formulario">Mensaje<span>*</span></label>
                             <textarea id="mensaje" name="mensaje" rows="10" cols="2" wrap="soft"
-                                placeholder="Tu mensaje" required></textarea>
+                                placeholder="Tu mensaje"></textarea>
                         </div>
                         <div class="fila">
-                            <input type="submit" value="Enviar">
+                            <input type="submit" value="Enviar" id="boton">  
                         </div>
                     </form>
                 </div>
@@ -97,7 +97,9 @@
             <small>La banda del 10 - 2023</small>
         </footer>
     </div>
+    <script src="../js/validacion.js"></script>
     <script src="../js/clima.js" type="module"></script>
+    
 </body>
 
 </html>
