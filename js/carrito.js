@@ -54,7 +54,7 @@ function vaciarCarr(){
             text: "Vaciamos tu carrito!",
             icon: "success",
             buttons: false,
-            timer: 3000,
+            timer: 2500,
         });
     } 
 }
