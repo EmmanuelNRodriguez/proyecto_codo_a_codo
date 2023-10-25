@@ -17,10 +17,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 300px;
-    min-width: 20%;
+    height: 320px;
+    width: 20%;
     border: 1px solid rgb(116, 116, 116);
-    padding: 0px;
     box-sizing: border-box;
     border-radius: 20px;
     background-color: rgba(179, 179, 174, 0.5);
@@ -36,32 +35,31 @@
 }
 
 .tit_prod {
-    font-size: 120%;
+    font-size: 1rem;
 }
 
 .img_pro {
-    /* width: 50%; */
     height: 100px;
     width: 100px;
-    padding: 10px;
 }
 
 /*Diseño responsive*/
 
 
 @media screen and (max-width: 700px) {
-
-    .producto {
-        max-width: 50%
-    }
-}
-
-@media screen and (max-width: 300px) {
     #productos {
         flex-direction: column;
     }
 
     .producto {
-        max-width: 100%;
+        width: 50%
     }
+}
+
+@media screen and (max-width: 450px) {
+
+    .producto {
+        width: 80%;
+    }
+
 }
