@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/tienda.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                                 <p id="cantCarr">0</p>
                             </div>
                             <div id="buttons">
-                                <button id="botVer" type="button">Ver</button>
+                                <button id="botVer" type="button" onclick=verCarr()>Ver</button>
                                 <button id="botVaciar" type="button" onclick=vaciarCarr()>Vaciar</button>    
                             </div>
                         </div>
@@ -60,97 +61,97 @@
                 <div class="producto">
                     <p class="tit_prod"><strong>Remera Blanca</strong></p>
                     <img class="img_pro" src="../img/remera_blanca.png" alt="Producto">
-                    <p>Remera con estampado de la banda.</p>
+                    <div class="desc_prod">Remera con estampado de la banda.</div>
                     <p>Precio: <strong>$ 2.500</strong></p>
                     <div class="xCarrito">
-                    <select name="p1" id="p1">
+                    <select name="p1" id="p1" class="butyselprod">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <button id="addp1" type="button">Agregar</button>
+                    <button id="addp1" type="button" class="butyselprod">Agregar</button>
                     </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Buzo Capucha</strong></p>
                     <img class="img_pro" src="../img/sueter_negro.png" alt="Producto">
-                    <p>Buzo con capucha y estampado de la banda.</p>
+                    <div class="desc_prod">Buzo con capucha y estampado de la banda.</div>
                     <p>Precio: <strong>$ 7.500</strong></p>
                     <div class="xCarrito">
-                        <select name="p2" id="p2">
+                        <select name="p2" id="p2" class="butyselprod">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                        <button id="addp2" type="button">Agregar</button>
+                        <button id="addp2" type="button" class="butyselprod">Agregar</button>
                     </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Chomba Roja</strong></p>
                     <img class="img_pro" src="../img/chomba_roja.png" alt="Producto">
-                    <p>Chomba roja con estampado de la banda.</p>
+                    <div class="desc_prod">Chomba roja con estampado de la banda.</div>
                     <p>Precio: <strong>$ 6.400</strong></p>
                     <div class="xCarrito">
-                        <select name="p3" id="p3">
+                        <select name="p3" id="p3" class="butyselprod">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                        <button id="addp3" type="button">Agregar</button>
+                        <button id="addp3" type="button" class="butyselprod">Agregar</button>
                     </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Taza</strong></p>
                     <img class="img_pro" src="../img/taza.png" alt="Producto">
-                    <p>Taza con el logo.</p>
+                    <div class="desc_prod">Taza con el logo.</div>
                     <p>Precio: <strong>$ 1.000</strong></p>
                     <div class="xCarrito">
-                        <select name="p4" id="p4">
+                        <select name="p4" id="p4" class="butyselprod">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                        <button id="addp4" type="button">Agregar</button>
+                        <button id="addp4" type="button" class="butyselprod">Agregar</button>
                     </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Lapicera</strong></p>
                     <img class="img_pro" src="../img/lapicera.png" alt="Producto">
-                    <p>Lapicera con logo personalizada.</p>
+                    <div class="desc_prod">Lapicera con logo personalizada.</div>
                     <p>Precio: <strong>$ 500</strong></p>
                     <div class="xCarrito">
-                        <select name="p5" id="p5">
+                        <select name="p5" id="p5" class="butyselprod">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                        <button id="addp5" type="button">Agregar</button>
+                        <button id="addp5" type="button" class="butyselprod">Agregar</button>
                     </div>
                 </div>
                 <div class="producto">
                     <p class="tit_prod"><strong>Vinilo</strong></p>
                     <img class="img_pro" src="../img/vinilo.png" alt="Producto">
-                    <p class="desc_prod">Vinilo decorativo con logo.</p>
+                    <div class="desc_prod">Vinilo decorativo con logo.</div>
                     <p>Precio: <strong>$ 2.400</strong></p>
                     <div class="xCarrito">
-                        <select name="p6" id="p6">
+                        <select name="p6" id="p6" class="butyselprod">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                         </select>
-                        <button id="addp6" type="button">Agregar</button>
+                        <button id="addp6" type="button" class="butyselprod">Agregar</button>
                     </div>
                 </div>
             </div>
