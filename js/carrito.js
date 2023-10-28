@@ -84,7 +84,8 @@ function cargarProductos(){
             document.querySelector("#cantCarr").textContent = totalCarrito;
             for (let i = 1; i <= 6; i++) {
             const botonAgregar = document.querySelector(`#addp${i}`);
-            botonAgregar.textContent = "Quitar";
+            const productoCarrito = `prod${i}`;
+            (carrito[productoCarrito]?botonAgregar.textContent = "Quitar":botonAgregar.textContent = "Agregar")
             }
     }
 }
