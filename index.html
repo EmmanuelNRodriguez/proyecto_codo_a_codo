@@ -11,18 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
-<body>
+<body onload="cargarProductos()">
     <div class="contenedor">
         <header>
             <div id="cabecera">
-                <div id="clima">
-                    <div id="imag"></div>
-                    <div id="temp"></div>
-                    <div id="humi"></div>
-                    <div id="sens"></div>
-                    <div id="pres"></div>
+                <div id="arriba">
+                    <div id="arrIzq">
+                        <div id="clima">
+                            <div id="imag"></div>
+                            <div id="temp"></div>
+                            <div id="humi"></div>
+                            <div id="sens"></div>
+                            <div id="pres"></div>
+                        </div>
+                    </div>
+                    <div id="contCarro">
+                        <div id="carro">
+                            <div id="itemsCarr">
+                                <img src="../img/Carrito.png" id="carr" alt="carrito">
+                                <p id="cantCarr">0</p>
+                            </div>
+                            <div id="buttons">
+                                <button id="botVer" type="button" onclick=verCarr()>Ver</button>
+                                <button id="botVaciar" type="button" onclick=vaciarCarr()>Vaciar</button>    
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="titulo">
                     <img id="img_titulo" src="../img/titulo1.png" alt="">
@@ -30,11 +47,11 @@
             </div>
             <nav>
                 <ul>
-                    <li class="seleccionado"><a href="#">Home</a></li>
-                    <li><a href="pages/biografia.html">Biografia</a></li>
-                    <li><a href="pages/tienda.html">Tienda</a></li>
-                    <li><a href="pages/galeria.html">Galeria</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li class="seleccionado"><a href="./index.html">Home</a></li>
+                    <li><a href="./pages/biografia.html">Biografia</a></li>
+                    <li><a href="./pages/tienda.html">Tienda</a></li>
+                    <li><a href="./pages/galeria.html">Galeria</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -78,5 +95,6 @@
         </footer>
     </div>
     <script src="./js/clima.js" type="module"></script>
+    <script src="./js/carrito_head.js"></script>
 </body>
 </html>

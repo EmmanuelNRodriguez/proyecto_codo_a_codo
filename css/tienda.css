@@ -1,61 +1,3 @@
-#contCarro{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    width: 50%;
-}
-
-#carro{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: rgba(179, 179, 174, 0.75);
-    box-shadow: 5px 5px 10px rgb(0, 0, 0), -5px -5px 12px black inset;
-    border-radius: 50%;
-    padding: 10px;
-    width: 130px;
-    height: 130px;
-}
-
-#itemsCarr{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80%;
-}
-
-#carr{
-    width: 40px;
-    height: 40px;
-}
-
-#cantCarr{
-    font-size: 1rem;
-    color: white;
-}
-
-
-
-#buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-#buttons>button{
-    width: 80px;
-    background-color: rgb(230, 117, 52);
-    border-color: rgb(251, 110, 29);
-    border-radius: 5px;
-    color: white;
-}
-
 #productos {
     display: flex;
     flex-direction: row;
@@ -129,24 +71,6 @@
     color: white;
     width: 40%;
     height: 40px;
-    text-align: center;
-}
-
-.swal-footer {
-    background-color: rgb(211, 232, 246);
-    margin-top: 32px;
-    border-top: 1px solid #E9EEF1;
-    overflow: hidden;
-}
-
-.swal-title {
-    margin: 0px;
-    font-size: 32px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
-    margin-bottom: 28px;
-}
-
-.swal-text {
     text-align: center;
 }
 

@@ -16,37 +16,11 @@ const textoProd = {
     text6: "Vinilo"
 };
 
-function sumarProducto(productoId) {
-    const cantidad = Number(document.querySelector(`#p${productoId}`).value);
-    const botonAgregar = document.querySelector(`#addp${productoId}`);
-    const productoCarrito = `prod${productoId}`;
-
-    if (botonAgregar.textContent === "Agregar") {
-        carrito[productoCarrito] += cantidad;
-        botonAgregar.textContent = "Quitar";
-        localStorage.setItem("carrito",JSON.stringify(carrito))
-    } else {
-        if (carrito[productoCarrito] >= cantidad) {
-            carrito[productoCarrito] -= cantidad;
-            if(carrito[productoCarrito]==0) botonAgregar.textContent = "Agregar";
-        }
-    }
-
-    const totalCarrito = Object.values(carrito).reduce((total, cantidad) => total + cantidad, 0);
-    document.querySelector("#cantCarr").textContent = totalCarrito;
-}
-
-// Agregar eventos para todos los botones "Agregar" de productos
-for (let i = 1; i <= 6; i++) {
-    const botonAgregar = document.getElementById(`addp${i}`);
-    botonAgregar.addEventListener('click', () => sumarProducto(i));
-}
 
 function vaciarCarr(){
     if(document.querySelector("#cantCarr").textContent > 0){
         for (let i = 1; i <= 6; i++) {
             const productoCarrito = `prod${i}`;
-            document.getElementById(`addp${i}`).textContent = "Agregar";
             carrito[productoCarrito] = 0;
         }
         document.querySelector("#cantCarr").textContent = 0;
@@ -82,9 +56,5 @@ function cargarProductos(){
          carrito = JSON.parse(productosGuardados);
             const totalCarrito = Object.values(carrito).reduce((total, cantidad) => total + cantidad, 0);
             document.querySelector("#cantCarr").textContent = totalCarrito;
-            for (let i = 1; i <= 6; i++) {
-            const botonAgregar = document.querySelector(`#addp${i}`);
-            botonAgregar.textContent = "Quitar";
-            }
     }
 }

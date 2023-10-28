@@ -11,18 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/biografia.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
-<body>
+<body onload="cargarProductos()">
     <div class="contenedor">
         <header>
             <div id="cabecera">
-                <div id="clima">
-                    <div id="imag"></div>
-                    <div id="temp"></div>
-                    <div id="humi"></div>
-                    <div id="sens"></div>
-                    <div id="pres"></div>
+                <div id="arriba">
+                    <div id="arrIzq">
+                        <div id="clima">
+                            <div id="imag"></div>
+                            <div id="temp"></div>
+                            <div id="humi"></div>
+                            <div id="sens"></div>
+                            <div id="pres"></div>
+                        </div>
+                    </div>
+                    <div id="contCarro">
+                        <div id="carro">
+                            <div id="itemsCarr">
+                                <img src="../img/Carrito.png" id="carr" alt="carrito">
+                                <p id="cantCarr">0</p>
+                            </div>
+                            <div id="buttons">
+                                <button id="botVer" type="button" onclick=verCarr()>Ver</button>
+                                <button id="botVaciar" type="button" onclick=vaciarCarr()>Vaciar</button>    
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="titulo">
                     <img id="img_titulo" src="../img/titulo1.png" alt="">
@@ -97,6 +114,7 @@
         </footer>
     </div>
     <script src="../js/clima.js" type="module"></script>
+    <script src="../js/carrito_head.js"></script>
 </body>
 
 </html>
